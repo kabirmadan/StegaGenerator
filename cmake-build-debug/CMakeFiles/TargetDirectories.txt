@@ -1,0 +1,3 @@
+/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir
