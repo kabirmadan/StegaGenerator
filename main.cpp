@@ -13,7 +13,8 @@ std::string getStrInput(){
 }
 
 
-/*For readability of main*/
+/*For readability of main
+ * (clean out casting stuff)*/
 int getStrLength(std::string input){
     int length {static_cast<int>(input.length())};
     return length;
@@ -29,17 +30,53 @@ std::string getHexStr(char c){
 }
 
 
+/*Ensures that a string's length is a multiple of 6
+ * (because hex color codes are 6 characters long)*/
+std::string evenSix(std::string str){
+    int length {static_cast<int>(str.length())};
+    int zerosToAppend { 6 - (length % 6) };
+    std::cout << "Adding " << zerosToAppend << " digits";
+    for (int i{0}; i < zerosToAppend; ++i){
+        str += "0";                                                           //append empty characters (0s because #000000 is RGB(0,0,0) aka black)
+    }
+    return str;
+}
+
+
 int main(){
     std::string input {getStrInput()};
     int length {getStrLength(input)};
-    std::vector<char> charArr{input.begin(), input.end()};                      //copy user input to char vector
+    //std::vector<char> charArr{input.begin(), input.end()};                  //copy user input to char vector
     std::string hexString{};
 
-    input = "";                                                                 //string copy of input no longer needed
+    for (char c : input) hexString += getHexStr(c);                           //convert each char to hex and append
 
-    for (char c : charArr) hexString += getHexStr(c);                           //convert each char to hex and append
+    input = "";                                                               //string copy of input no longer needed
 
-    std::cout << "\n\nLength of input: " << length << " characters\n";          //print # of characters in input
-    std::cout << "Hex: " << hexString;                                          //print full hex conversion
+    std::cout << "\n\nLength of input: " << length << " characters\n";        //print # of characters in input
+    std::cout << "Hex: " << hexString << "\n";                                //print full hex conversion
+    std::cout << "Hex length: " << getStrLength(hexString) << " characters\n";//print # of characters in hex representation
+
+    if (getStrLength(hexString) % 6 != 0){                                    //make length of hex string a multiple of 6 if necessary (see eve) + print any changes
+        hexString = evenSix(hexString);
+        std::cout << "\nNew Hex: " << hexString << "\n";
+        std::cout << "New Hex length: " << getStrLength(hexString) << "\n";
+
+    }
+
+    std::vector<std::string> hexValues{};                                    //array to store 6-digit hex values
+    hexValues.resize( (getStrLength(hexString) / 6) );                   //resize array
+    int idx{0};
+    for (int i{0}; i < (getStrLength(hexString)); i+=6){                     //add hex values to array
+        hexValues[idx] = hexString.substr(i, 6);
+        ++idx;
+    }
+
+    std::cout << "Hex values array: [ ";                                    //print hex values array
+    for (int i{0}; i < static_cast<int>(std::size(hexValues)); ++i){
+        std::cout << hexValues[i] << " ";
+    }
+    std::cout << "]";
+
     return 0;
 }
