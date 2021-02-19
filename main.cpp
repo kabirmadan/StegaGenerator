@@ -43,6 +43,30 @@ std::string evenSix(std::string str){
 }
 
 
+/*Returns the red RGB value from a hex string*/
+uint_fast8_t getRed(std::string hexValStr){
+    int hexValInt {std::stoi(hexValStr, nullptr, 16)};              //gets base-16 integer from hex string
+    uint_fast8_t red = hexValInt >> 16;                                       //shifts #RRGGBB to #RR
+    return red;
+}
+
+
+/*Returns the green RGB value from a hex string*/
+uint_fast8_t getGreen(std::string hexValStr){
+    int hexValInt {std::stoi(hexValStr, nullptr, 16)};
+    uint_fast8_t green = (hexValInt >> 8) & 0x00ff;                           //shifts #RRGGBB to #RRGG and masks for #GG
+    return green;
+}
+
+
+/*Returns the blue RGB value from a hex string*/
+uint_fast8_t getBlue(std::string hexValStr){
+    int hexValInt {std::stoi(hexValStr, nullptr, 16)};
+    uint_fast8_t blue = hexValInt & 0x0000ff;                                 //masks #RRGGBB for #BB
+    return blue;
+}
+
+
 int main(){
     std::string input {getStrInput()};
     int length {getStrLength(input)};
@@ -72,11 +96,16 @@ int main(){
         ++idx;
     }
 
-    std::cout << "Hex values array: [ ";                                    //print hex values array
+    std::cout << "Hex values array: [ ";                                    //print hex values array (strings)
     for (int i{0}; i < static_cast<int>(std::size(hexValues)); ++i){
         std::cout << hexValues[i] << " ";
     }
-    std::cout << "]";
+    std::cout << "]\n";
+
+    std::cout << "RGB values: ";                                            //print RGB values (8 bit ints)
+    for(std::string value : hexValues){
+        std::cout << "(" << static_cast<unsigned>(getRed(value)) << "," << static_cast<unsigned>(getGreen(value)) << "," << static_cast<unsigned>(getBlue(value)) << ") ";
+    }
 
     return 0;
 }
