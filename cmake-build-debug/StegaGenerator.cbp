@@ -83,6 +83,18 @@
 		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/main.cpp">
 			<Option target="StegaGenerator"/>
 		</Unit>
+		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/rgb.cpp">
+			<Option target="StegaGenerator"/>
+		</Unit>
+		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/rgb.h">
+			<Option target="StegaGenerator"/>
+		</Unit>
+		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/string_util.cpp">
+			<Option target="StegaGenerator"/>
+		</Unit>
+		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/string_util.h">
+			<Option target="StegaGenerator"/>
+		</Unit>
 		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

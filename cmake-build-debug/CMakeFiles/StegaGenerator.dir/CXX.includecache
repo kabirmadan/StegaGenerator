@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/Home/CLionProjects/StegaGenerator/main.cpp
+/Users/Home/CLionProjects/StegaGenerator/string_util.cpp
 iostream
 -
 sstream
 -
 string
 -
-vector
--
+string_util.h
+/Users/Home/CLionProjects/StegaGenerator/string_util.h
+
+/Users/Home/CLionProjects/StegaGenerator/string_util.h
 

@@ -170,6 +170,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rgb.o: rgb.cpp.o
+
+.PHONY : rgb.o
+
+# target to build an object file
+rgb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/rgb.cpp.o
+.PHONY : rgb.cpp.o
+
+rgb.i: rgb.cpp.i
+
+.PHONY : rgb.i
+
+# target to preprocess a source file
+rgb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/rgb.cpp.i
+.PHONY : rgb.cpp.i
+
+rgb.s: rgb.cpp.s
+
+.PHONY : rgb.s
+
+# target to generate assembly for a file
+rgb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/rgb.cpp.s
+.PHONY : rgb.cpp.s
+
+string_util.o: string_util.cpp.o
+
+.PHONY : string_util.o
+
+# target to build an object file
+string_util.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/string_util.cpp.o
+.PHONY : string_util.cpp.o
+
+string_util.i: string_util.cpp.i
+
+.PHONY : string_util.i
+
+# target to preprocess a source file
+string_util.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/string_util.cpp.i
+.PHONY : string_util.cpp.i
+
+string_util.s: string_util.cpp.s
+
+.PHONY : string_util.s
+
+# target to generate assembly for a file
+string_util.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/string_util.cpp.s
+.PHONY : string_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +236,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rgb.o"
+	@echo "... rgb.i"
+	@echo "... rgb.s"
+	@echo "... string_util.o"
+	@echo "... string_util.i"
+	@echo "... string_util.s"
 .PHONY : help
 
 

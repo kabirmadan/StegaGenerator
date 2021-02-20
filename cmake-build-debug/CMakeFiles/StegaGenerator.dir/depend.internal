@@ -3,3 +3,11 @@
 
 CMakeFiles/StegaGenerator.dir/main.cpp.o
  /Users/Home/CLionProjects/StegaGenerator/main.cpp
+ /Users/Home/CLionProjects/StegaGenerator/rgb.h
+ /Users/Home/CLionProjects/StegaGenerator/string_util.h
+CMakeFiles/StegaGenerator.dir/rgb.cpp.o
+ /Users/Home/CLionProjects/StegaGenerator/rgb.cpp
+ /Users/Home/CLionProjects/StegaGenerator/rgb.h
+CMakeFiles/StegaGenerator.dir/string_util.cpp.o
+ /Users/Home/CLionProjects/StegaGenerator/string_util.cpp
+ /Users/Home/CLionProjects/StegaGenerator/string_util.h

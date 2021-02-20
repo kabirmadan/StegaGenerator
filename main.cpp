@@ -1,70 +1,9 @@
-#include <iostream> //cin, cout
-#include <sstream>  //stringstream
-#include <string>   //string
-#include <vector>   //vector
+#include <iostream>      //cin, cout
+#include <string>        //string
+#include <vector>        //vector
 
-
-/*For readability of main*/
-std::string getStrInput(){
-    std::string input{};
-    std::cout << "Type something (press  tilde + enter  to complete):\n";
-    getline(std::cin, input, '~');                                  //user input delimited by ~ character
-    return input;
-}
-
-
-/*For readability of main
- * (clean out casting stuff)*/
-int getStrLength(std::string input){
-    int length {static_cast<int>(input.length())};
-    return length;
-}
-
-
-/*Convert single char to hex, return as string
- * Process as stringstream because of hex manipulator*/
-std::string getHexStr(char c){
-    std::stringstream sstr;
-    sstr << std::hex << static_cast<int>(c);
-    return sstr.str();
-}
-
-
-/*Ensures that a string's length is a multiple of 6
- * (because hex color codes are 6 characters long)*/
-std::string evenSix(std::string str){
-    int length {static_cast<int>(str.length())};
-    int zerosToAppend { 6 - (length % 6) };
-    std::cout << "Adding " << zerosToAppend << " digits";
-    for (int i{0}; i < zerosToAppend; ++i){
-        str += "0";                                                           //append empty characters (0s because #000000 is RGB(0,0,0) aka black)
-    }
-    return str;
-}
-
-
-/*Returns the red RGB value from a hex string*/
-uint_fast8_t getRed(std::string hexValStr){
-    int hexValInt {std::stoi(hexValStr, nullptr, 16)};              //gets base-16 integer from hex string
-    uint_fast8_t red = hexValInt >> 16;                                       //shifts #RRGGBB to #RR
-    return red;
-}
-
-
-/*Returns the green RGB value from a hex string*/
-uint_fast8_t getGreen(std::string hexValStr){
-    int hexValInt {std::stoi(hexValStr, nullptr, 16)};
-    uint_fast8_t green = (hexValInt >> 8) & 0x00ff;                           //shifts #RRGGBB to #RRGG and masks for #GG
-    return green;
-}
-
-
-/*Returns the blue RGB value from a hex string*/
-uint_fast8_t getBlue(std::string hexValStr){
-    int hexValInt {std::stoi(hexValStr, nullptr, 16)};
-    uint_fast8_t blue = hexValInt & 0x0000ff;                                 //masks #RRGGBB for #BB
-    return blue;
-}
+#include "rgb.h"         //getRed, getGreen, getBlue
+#include "string_util.h" //getStrInput, getStrLength, getHexStr, evenSix
 
 
 int main(){
