@@ -6,7 +6,16 @@
 
 
 /*For readability of main*/
-std::string getStrInput(){
+std::string getTitle(){
+    std::string title{};
+    std::cout << "Title: ";
+    getline(std::cin, title);
+    return title;
+}
+
+
+/*For readability of main*/
+std::string getLongTextInput(){
     std::string input{};
     std::cout << "Type something (press  tilde + enter  to complete):\n";
     getline(std::cin, input, '~');                                  //user input delimited by ~ character

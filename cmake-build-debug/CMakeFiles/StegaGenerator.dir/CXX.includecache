@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/Users/Home/CLionProjects/StegaGenerator/main.cpp
+iostream
+-
+string
+-
+vector
+-
+rgb.h
+/Users/Home/CLionProjects/StegaGenerator/rgb.h
+string_util.h
+/Users/Home/CLionProjects/StegaGenerator/string_util.h
+
+/Users/Home/CLionProjects/StegaGenerator/rgb.cpp
+cmath
+-
+string
+-
+rgb.h
+/Users/Home/CLionProjects/StegaGenerator/rgb.h
+
+/Users/Home/CLionProjects/StegaGenerator/rgb.h
+
 /Users/Home/CLionProjects/StegaGenerator/string_util.cpp
 iostream
 -

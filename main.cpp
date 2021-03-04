@@ -2,16 +2,17 @@
 #include <string>        //string
 #include <vector>        //vector
 
-#include "rgb.h"         //getRed, getGreen, getBlue
+#include "rgb.h"         //getRed, getGreen, getBlue, getDimension
 #include "string_util.h" //getStrInput, getStrLength, getHexStr, evenSix
 
 
 int main(){
-    std::string input {getStrInput()};
+    std::string title {getTitle()};
+    std::string input {getLongTextInput()};
     int length {getStrLength(input)};
     //std::vector<char> charArr{input.begin(), input.end()};                  //copy user input to char vector
-    std::string hexString{};
 
+    std::string hexString{};
     for (char c : input) hexString += getHexStr(c);                           //convert each char to hex and append
 
     input = "";                                                               //string copy of input no longer needed
@@ -43,8 +44,16 @@ int main(){
 
     std::cout << "RGB values: ";                                            //print RGB values (8 bit ints)
     for(std::string value : hexValues){
-        std::cout << "(" << static_cast<unsigned>(getRed(value)) << "," << static_cast<unsigned>(getGreen(value)) << "," << static_cast<unsigned>(getBlue(value)) << ") ";
+        std::cout << "("
+        << static_cast<unsigned>(getRed(value)) << ","
+        << static_cast<unsigned>(getGreen(value)) << ","
+        << static_cast<unsigned>(getBlue(value)) << ") ";
     }
+
+    int numRows { getDimension(static_cast<int>(std::size(hexValues))) };   //set number of rows of bitmap image
+    int numCols = numRows;                                                  //and number of columns
+
+    std::cout << "\nCanvas: " << numRows << "x" << numCols;
 
     return 0;
 }
