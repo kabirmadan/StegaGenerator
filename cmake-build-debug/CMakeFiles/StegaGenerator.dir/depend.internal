@@ -5,6 +5,7 @@ CMakeFiles/StegaGenerator.dir/main.cpp.o
  /Users/Home/CLionProjects/StegaGenerator/main.cpp
  /Users/Home/CLionProjects/StegaGenerator/rgb.h
  /Users/Home/CLionProjects/StegaGenerator/string_util.h
+ /Users/Home/CLionProjects/StegaGenerator/third_party/bitmap_image.hpp
 CMakeFiles/StegaGenerator.dir/rgb.cpp.o
  /Users/Home/CLionProjects/StegaGenerator/rgb.cpp
  /Users/Home/CLionProjects/StegaGenerator/rgb.h

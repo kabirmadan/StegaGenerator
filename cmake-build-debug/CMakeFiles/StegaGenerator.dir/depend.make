@@ -4,6 +4,7 @@
 CMakeFiles/StegaGenerator.dir/main.cpp.o: ../main.cpp
 CMakeFiles/StegaGenerator.dir/main.cpp.o: ../rgb.h
 CMakeFiles/StegaGenerator.dir/main.cpp.o: ../string_util.h
+CMakeFiles/StegaGenerator.dir/main.cpp.o: ../third_party/bitmap_image.hpp
 
 CMakeFiles/StegaGenerator.dir/rgb.cpp.o: ../rgb.cpp
 CMakeFiles/StegaGenerator.dir/rgb.cpp.o: ../rgb.h

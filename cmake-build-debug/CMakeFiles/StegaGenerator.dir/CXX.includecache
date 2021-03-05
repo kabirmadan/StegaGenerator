@@ -17,8 +17,32 @@ rgb.h
 /Users/Home/CLionProjects/StegaGenerator/rgb.h
 string_util.h
 /Users/Home/CLionProjects/StegaGenerator/string_util.h
+third_party/bitmap_image.hpp
+/Users/Home/CLionProjects/StegaGenerator/third_party/bitmap_image.hpp
 
 /Users/Home/CLionProjects/StegaGenerator/rgb.h
 
 /Users/Home/CLionProjects/StegaGenerator/string_util.h
+
+/Users/Home/CLionProjects/StegaGenerator/third_party/bitmap_image.hpp
+algorithm
+-
+cmath
+-
+cstdlib
+-
+cstring
+-
+fstream
+-
+iostream
+-
+iterator
+-
+limits
+-
+string
+-
+vector
+-
 

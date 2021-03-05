@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/bitmap_image.hpp">
-			<Option target="StegaGenerator"/>
-		</Unit>
 		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/main.cpp">
 			<Option target="StegaGenerator"/>
 		</Unit>
@@ -96,6 +93,9 @@
 			<Option target="StegaGenerator"/>
 		</Unit>
 		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/string_util.h">
+			<Option target="StegaGenerator"/>
+		</Unit>
+		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/third_party/bitmap_image.hpp">
 			<Option target="StegaGenerator"/>
 		</Unit>
 		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/CMakeLists.txt">

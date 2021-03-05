@@ -1,29 +1,27 @@
-#include <iostream>      //cin, cout
-#include <string>        //string
-#include <vector>        //vector
+#include <iostream>                             //cout
+#include <string>                               //string
+#include <vector>                               //vector
 
-#include "rgb.h"         //getRed, getGreen, getBlue, getDimension
-#include "string_util.h" //getStrInput, getStrLength, getHexStr, evenSix
+#include "rgb.h"                                //getRed, getGreen, getBlue, getDimension
+#include "string_util.h"                        //getTitle, getLongTextInput, getStrLength, getHexStr, evenSix
 
-#include "third_party/bitmap_image.hpp"
+#include "third_party/bitmap_image.hpp"         //bitmap_image, set_all_channels, set_pixel, save_image
 
 
 int main(){
-    std::string title {getTitle()};
+    std::string filename {getTitle() + ".bmp"};
     std::string input {getLongTextInput()};
-    int length {getStrLength(input)};
-    //std::vector<char> charArr{input.begin(), input.end()};                  //copy user input to char vector
 
     std::string hexString{};
     for (char c : input) hexString += getHexStr(c);                           //convert each char to hex and append
 
-    input = "";                                                               //string copy of input no longer needed
-
-    std::cout << "\n\nLength of input: " << length << " characters\n";        //print # of characters in input
+    std::cout << "\n\nLength of input: " << getStrLength(input) << " characters\n";
     std::cout << "Hex: " << hexString << "\n";                                //print full hex conversion
     std::cout << "Hex length: " << getStrLength(hexString) << " characters\n";//print # of characters in hex representation
 
-    if (getStrLength(hexString) % 6 != 0){                                    //make length of hex string a multiple of 6 if necessary (see eve) + print any changes
+    input = "";                                                               //string copy of input no longer needed
+
+    if (getStrLength(hexString) % 6 != 0){                                    //make length of hex string a multiple of 6 if necessary (see evenSix()) + print any changes
         hexString = evenSix(hexString);
         std::cout << "\nNew Hex: " << hexString << "\n";
         std::cout << "New Hex length: " << getStrLength(hexString) << "\n";
@@ -56,6 +54,28 @@ int main(){
     int numCols = numRows;                                                  //and number of columns
 
     std::cout << "\nCanvas: " << numRows << "x" << numCols;
+
+    /*--------------------------------------------------*/
+
+    bitmap_image image (numCols,numRows);                                  //create bitmap image
+    image.set_all_channels(255,255,255);           //set all pixels to white - placeholder pixels
+
+    idx = 0;
+    for (int row = 0; row < numRows; ++row){
+        for (int col = 0; col < numCols; ++col){
+            if (idx <= (static_cast<int>(std::size(hexValues)))){
+                try {                                                     //set each pixel color based on hex values
+                    image.set_pixel(col, row, getRed(hexValues[idx]), getGreen(hexValues[idx]), getBlue(hexValues[idx]));
+                }
+                catch (...) {                                             //fixes stoi newline conversion bug
+                    std::cout << "";
+                }
+                ++idx;
+            }
+        }
+    }
+
+    image.save_image(filename);                                          //save image
 
     return 0;
 }
