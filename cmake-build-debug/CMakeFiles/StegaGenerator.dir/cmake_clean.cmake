@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/StegaGenerator.dir/main.cpp.o"
-  "CMakeFiles/StegaGenerator.dir/rgb.cpp.o"
-  "CMakeFiles/StegaGenerator.dir/string_util.cpp.o"
+  "CMakeFiles/StegaGenerator.dir/src/main.cpp.o"
+  "CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o"
+  "CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o"
   "StegaGenerator"
   "StegaGenerator.pdb"
 )

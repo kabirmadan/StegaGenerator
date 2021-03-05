@@ -143,86 +143,86 @@ StegaGenerator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/build
 .PHONY : StegaGenerator/fast
 
-main.o: main.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-rgb.o: rgb.cpp.o
-
-.PHONY : rgb.o
+.PHONY : src/main.o
 
 # target to build an object file
-rgb.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/rgb.cpp.o
-.PHONY : rgb.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-rgb.i: rgb.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : rgb.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-rgb.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/rgb.cpp.i
-.PHONY : rgb.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-rgb.s: rgb.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : rgb.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-rgb.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/rgb.cpp.s
-.PHONY : rgb.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-string_util.o: string_util.cpp.o
+src/rgb.o: src/rgb.cpp.o
 
-.PHONY : string_util.o
+.PHONY : src/rgb.o
 
 # target to build an object file
-string_util.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/string_util.cpp.o
-.PHONY : string_util.cpp.o
+src/rgb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o
+.PHONY : src/rgb.cpp.o
 
-string_util.i: string_util.cpp.i
+src/rgb.i: src/rgb.cpp.i
 
-.PHONY : string_util.i
+.PHONY : src/rgb.i
 
 # target to preprocess a source file
-string_util.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/string_util.cpp.i
-.PHONY : string_util.cpp.i
+src/rgb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/rgb.cpp.i
+.PHONY : src/rgb.cpp.i
 
-string_util.s: string_util.cpp.s
+src/rgb.s: src/rgb.cpp.s
 
-.PHONY : string_util.s
+.PHONY : src/rgb.s
 
 # target to generate assembly for a file
-string_util.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/string_util.cpp.s
-.PHONY : string_util.cpp.s
+src/rgb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/rgb.cpp.s
+.PHONY : src/rgb.cpp.s
+
+src/string_util.o: src/string_util.cpp.o
+
+.PHONY : src/string_util.o
+
+# target to build an object file
+src/string_util.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o
+.PHONY : src/string_util.cpp.o
+
+src/string_util.i: src/string_util.cpp.i
+
+.PHONY : src/string_util.i
+
+# target to preprocess a source file
+src/string_util.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/string_util.cpp.i
+.PHONY : src/string_util.cpp.i
+
+src/string_util.s: src/string_util.cpp.s
+
+.PHONY : src/string_util.s
+
+# target to generate assembly for a file
+src/string_util.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StegaGenerator.dir/build.make CMakeFiles/StegaGenerator.dir/src/string_util.cpp.s
+.PHONY : src/string_util.cpp.s
 
 # Help Target
 help:
@@ -233,15 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... StegaGenerator"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... rgb.o"
-	@echo "... rgb.i"
-	@echo "... rgb.s"
-	@echo "... string_util.o"
-	@echo "... string_util.i"
-	@echo "... string_util.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/rgb.o"
+	@echo "... src/rgb.i"
+	@echo "... src/rgb.s"
+	@echo "... src/string_util.o"
+	@echo "... src/string_util.i"
+	@echo "... src/string_util.s"
 .PHONY : help
 
 

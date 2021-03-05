@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Home/CLionProjects/StegaGenerator/main.cpp" "/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir/main.cpp.o"
-  "/Users/Home/CLionProjects/StegaGenerator/rgb.cpp" "/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir/rgb.cpp.o"
-  "/Users/Home/CLionProjects/StegaGenerator/string_util.cpp" "/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir/string_util.cpp.o"
+  "/Users/Home/CLionProjects/StegaGenerator/src/main.cpp" "/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir/src/main.cpp.o"
+  "/Users/Home/CLionProjects/StegaGenerator/src/rgb.cpp" "/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o"
+  "/Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp" "/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

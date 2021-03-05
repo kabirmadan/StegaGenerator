@@ -3,4 +3,4 @@ project(StegaGenerator)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(StegaGenerator main.cpp string_util.cpp string_util.h rgb.cpp rgb.h third_party/bitmap_image.hpp)
+add_executable(StegaGenerator src/main.cpp src/string_util.cpp src/string_util.h src/rgb.cpp src/rgb.h src/third_party/bitmap_image.hpp)

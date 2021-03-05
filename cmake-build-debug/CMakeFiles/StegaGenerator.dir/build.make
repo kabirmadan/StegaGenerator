@@ -77,57 +77,57 @@ include CMakeFiles/StegaGenerator.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/StegaGenerator.dir/flags.make
 
-CMakeFiles/StegaGenerator.dir/main.cpp.o: CMakeFiles/StegaGenerator.dir/flags.make
-CMakeFiles/StegaGenerator.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StegaGenerator.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StegaGenerator.dir/main.cpp.o -c /Users/Home/CLionProjects/StegaGenerator/main.cpp
+CMakeFiles/StegaGenerator.dir/src/main.cpp.o: CMakeFiles/StegaGenerator.dir/flags.make
+CMakeFiles/StegaGenerator.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StegaGenerator.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StegaGenerator.dir/src/main.cpp.o -c /Users/Home/CLionProjects/StegaGenerator/src/main.cpp
 
-CMakeFiles/StegaGenerator.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StegaGenerator.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Home/CLionProjects/StegaGenerator/main.cpp > CMakeFiles/StegaGenerator.dir/main.cpp.i
+CMakeFiles/StegaGenerator.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StegaGenerator.dir/src/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Home/CLionProjects/StegaGenerator/src/main.cpp > CMakeFiles/StegaGenerator.dir/src/main.cpp.i
 
-CMakeFiles/StegaGenerator.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StegaGenerator.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Home/CLionProjects/StegaGenerator/main.cpp -o CMakeFiles/StegaGenerator.dir/main.cpp.s
+CMakeFiles/StegaGenerator.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StegaGenerator.dir/src/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Home/CLionProjects/StegaGenerator/src/main.cpp -o CMakeFiles/StegaGenerator.dir/src/main.cpp.s
 
-CMakeFiles/StegaGenerator.dir/string_util.cpp.o: CMakeFiles/StegaGenerator.dir/flags.make
-CMakeFiles/StegaGenerator.dir/string_util.cpp.o: ../string_util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/StegaGenerator.dir/string_util.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StegaGenerator.dir/string_util.cpp.o -c /Users/Home/CLionProjects/StegaGenerator/string_util.cpp
+CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o: CMakeFiles/StegaGenerator.dir/flags.make
+CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o: ../src/string_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o -c /Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp
 
-CMakeFiles/StegaGenerator.dir/string_util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StegaGenerator.dir/string_util.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Home/CLionProjects/StegaGenerator/string_util.cpp > CMakeFiles/StegaGenerator.dir/string_util.cpp.i
+CMakeFiles/StegaGenerator.dir/src/string_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StegaGenerator.dir/src/string_util.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp > CMakeFiles/StegaGenerator.dir/src/string_util.cpp.i
 
-CMakeFiles/StegaGenerator.dir/string_util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StegaGenerator.dir/string_util.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Home/CLionProjects/StegaGenerator/string_util.cpp -o CMakeFiles/StegaGenerator.dir/string_util.cpp.s
+CMakeFiles/StegaGenerator.dir/src/string_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StegaGenerator.dir/src/string_util.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp -o CMakeFiles/StegaGenerator.dir/src/string_util.cpp.s
 
-CMakeFiles/StegaGenerator.dir/rgb.cpp.o: CMakeFiles/StegaGenerator.dir/flags.make
-CMakeFiles/StegaGenerator.dir/rgb.cpp.o: ../rgb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StegaGenerator.dir/rgb.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StegaGenerator.dir/rgb.cpp.o -c /Users/Home/CLionProjects/StegaGenerator/rgb.cpp
+CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o: CMakeFiles/StegaGenerator.dir/flags.make
+CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o: ../src/rgb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o -c /Users/Home/CLionProjects/StegaGenerator/src/rgb.cpp
 
-CMakeFiles/StegaGenerator.dir/rgb.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StegaGenerator.dir/rgb.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Home/CLionProjects/StegaGenerator/rgb.cpp > CMakeFiles/StegaGenerator.dir/rgb.cpp.i
+CMakeFiles/StegaGenerator.dir/src/rgb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StegaGenerator.dir/src/rgb.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Home/CLionProjects/StegaGenerator/src/rgb.cpp > CMakeFiles/StegaGenerator.dir/src/rgb.cpp.i
 
-CMakeFiles/StegaGenerator.dir/rgb.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StegaGenerator.dir/rgb.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Home/CLionProjects/StegaGenerator/rgb.cpp -o CMakeFiles/StegaGenerator.dir/rgb.cpp.s
+CMakeFiles/StegaGenerator.dir/src/rgb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StegaGenerator.dir/src/rgb.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Home/CLionProjects/StegaGenerator/src/rgb.cpp -o CMakeFiles/StegaGenerator.dir/src/rgb.cpp.s
 
 # Object files for target StegaGenerator
 StegaGenerator_OBJECTS = \
-"CMakeFiles/StegaGenerator.dir/main.cpp.o" \
-"CMakeFiles/StegaGenerator.dir/string_util.cpp.o" \
-"CMakeFiles/StegaGenerator.dir/rgb.cpp.o"
+"CMakeFiles/StegaGenerator.dir/src/main.cpp.o" \
+"CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o" \
+"CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o"
 
 # External object files for target StegaGenerator
 StegaGenerator_EXTERNAL_OBJECTS =
 
-StegaGenerator: CMakeFiles/StegaGenerator.dir/main.cpp.o
-StegaGenerator: CMakeFiles/StegaGenerator.dir/string_util.cpp.o
-StegaGenerator: CMakeFiles/StegaGenerator.dir/rgb.cpp.o
+StegaGenerator: CMakeFiles/StegaGenerator.dir/src/main.cpp.o
+StegaGenerator: CMakeFiles/StegaGenerator.dir/src/string_util.cpp.o
+StegaGenerator: CMakeFiles/StegaGenerator.dir/src/rgb.cpp.o
 StegaGenerator: CMakeFiles/StegaGenerator.dir/build.make
 StegaGenerator: CMakeFiles/StegaGenerator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Home/CLionProjects/StegaGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable StegaGenerator"

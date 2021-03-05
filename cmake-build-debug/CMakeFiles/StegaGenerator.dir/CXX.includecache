@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Home/CLionProjects/StegaGenerator/main.cpp
+/Users/Home/CLionProjects/StegaGenerator/src/main.cpp
 iostream
 -
 string
@@ -14,17 +14,35 @@ string
 vector
 -
 rgb.h
-/Users/Home/CLionProjects/StegaGenerator/rgb.h
+/Users/Home/CLionProjects/StegaGenerator/src/rgb.h
 string_util.h
-/Users/Home/CLionProjects/StegaGenerator/string_util.h
+/Users/Home/CLionProjects/StegaGenerator/src/string_util.h
 third_party/bitmap_image.hpp
-/Users/Home/CLionProjects/StegaGenerator/third_party/bitmap_image.hpp
+/Users/Home/CLionProjects/StegaGenerator/src/third_party/bitmap_image.hpp
 
-/Users/Home/CLionProjects/StegaGenerator/rgb.h
+/Users/Home/CLionProjects/StegaGenerator/src/rgb.cpp
+cmath
+-
+string
+-
+rgb.h
+/Users/Home/CLionProjects/StegaGenerator/src/rgb.h
 
-/Users/Home/CLionProjects/StegaGenerator/string_util.h
+/Users/Home/CLionProjects/StegaGenerator/src/rgb.h
 
-/Users/Home/CLionProjects/StegaGenerator/third_party/bitmap_image.hpp
+/Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp
+iostream
+-
+sstream
+-
+string
+-
+string_util.h
+/Users/Home/CLionProjects/StegaGenerator/src/string_util.h
+
+/Users/Home/CLionProjects/StegaGenerator/src/string_util.h
+
+/Users/Home/CLionProjects/StegaGenerator/src/third_party/bitmap_image.hpp
 algorithm
 -
 cmath
