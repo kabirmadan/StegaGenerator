@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/bitmap_image.hpp">
+			<Option target="StegaGenerator"/>
+		</Unit>
 		<Unit filename="/Users/Home/CLionProjects/StegaGenerator/main.cpp">
 			<Option target="StegaGenerator"/>
 		</Unit>

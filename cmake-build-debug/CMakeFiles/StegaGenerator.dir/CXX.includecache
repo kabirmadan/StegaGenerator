@@ -18,25 +18,7 @@ rgb.h
 string_util.h
 /Users/Home/CLionProjects/StegaGenerator/string_util.h
 
-/Users/Home/CLionProjects/StegaGenerator/rgb.cpp
-cmath
--
-string
--
-rgb.h
 /Users/Home/CLionProjects/StegaGenerator/rgb.h
-
-/Users/Home/CLionProjects/StegaGenerator/rgb.h
-
-/Users/Home/CLionProjects/StegaGenerator/string_util.cpp
-iostream
--
-sstream
--
-string
--
-string_util.h
-/Users/Home/CLionProjects/StegaGenerator/string_util.h
 
 /Users/Home/CLionProjects/StegaGenerator/string_util.h
 

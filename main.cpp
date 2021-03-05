@@ -5,6 +5,8 @@
 #include "rgb.h"         //getRed, getGreen, getBlue, getDimension
 #include "string_util.h" //getStrInput, getStrLength, getHexStr, evenSix
 
+#include "third_party/bitmap_image.hpp"
+
 
 int main(){
     std::string title {getTitle()};
