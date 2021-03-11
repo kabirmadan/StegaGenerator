@@ -16,7 +16,7 @@ This program takes text input from the user, converts it into a series of six-di
 
 ### Example
 **Input:**
-[ **_Here Comes the Sun_ by The Beatles** (Lyrics)](https://genius.com/The-beatles-here-comes-the-sun-lyrics)
+[ _Here Comes the Sun_ by The Beatles (Lyrics)](https://genius.com/The-beatles-here-comes-the-sun-lyrics)
 
 
 **Output** (enlarged and uploaded as PNG)**:**
