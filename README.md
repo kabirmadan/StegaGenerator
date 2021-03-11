@@ -20,4 +20,5 @@ This program takes text input from the user, converts it into a series of six-di
 
 
 **Output** (enlarged and uploaded as PNG)**:**
+
 <img width="275" alt="herecomesthesun" src="https://user-images.githubusercontent.com/35256452/110777227-db8e2600-829b-11eb-9e86-0356c0591d6e.png">
