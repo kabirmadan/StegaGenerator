@@ -20,14 +20,6 @@ string_util.h
 third_party/bitmap_image.hpp
 /Users/Home/CLionProjects/StegaGenerator/src/third_party/bitmap_image.hpp
 
-/Users/Home/CLionProjects/StegaGenerator/src/rgb.cpp
-cmath
--
-string
--
-rgb.h
-/Users/Home/CLionProjects/StegaGenerator/src/rgb.h
-
 /Users/Home/CLionProjects/StegaGenerator/src/rgb.h
 
 /Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp

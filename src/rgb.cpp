@@ -6,7 +6,7 @@
 
 /*Returns the red RGB value from a hex string*/
 uint_fast8_t getRed(std::string hexValStr){
-    int hexValInt {std::stoi(hexValStr, nullptr, 16)};              //gets base-16 integer from hex string
+    int hexValInt {std::stoi(hexValStr, nullptr, 16)};                        //gets base-16 integer from hex string
     uint_fast8_t red = hexValInt >> 16;                                       //shifts #RRGGBB to #RR
     return red;
 }
@@ -30,9 +30,7 @@ uint_fast8_t getBlue(std::string hexValStr){
 
 /*Returns true if n is a perfect square, false otherwise*/
 bool isPerfectSquare(int n){
-    if (std::floor(std::sqrt(n)) == std::sqrt(n))
-        return true;
-    return false;
+    return (std::floor(std::sqrt(n)) == std::sqrt(n));
 }
 
 
