@@ -49,7 +49,7 @@ std::string getHexStr(char c){
 std::string evenSix(std::string str){
     int length {static_cast<int>(str.length())};
     int zerosToAppend { 6 - (length % 6) };
-    std::cout << "Adding " << zerosToAppend << " digits\n";
+    //std::cout << "Adding " << zerosToAppend << " digits\n";               //uncomment for debugging
     for (int i{0}; i < zerosToAppend; ++i){
         str += "0";
     }

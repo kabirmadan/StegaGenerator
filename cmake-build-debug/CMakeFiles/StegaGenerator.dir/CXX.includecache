@@ -22,16 +22,6 @@ third_party/bitmap_image.hpp
 
 /Users/Home/CLionProjects/StegaGenerator/src/rgb.h
 
-/Users/Home/CLionProjects/StegaGenerator/src/string_util.cpp
-iostream
--
-sstream
--
-string
--
-string_util.h
-/Users/Home/CLionProjects/StegaGenerator/src/string_util.h
-
 /Users/Home/CLionProjects/StegaGenerator/src/string_util.h
 
 /Users/Home/CLionProjects/StegaGenerator/src/third_party/bitmap_image.hpp

@@ -8,14 +8,14 @@
 #include "third_party/bitmap_image.hpp"         //bitmap_image, set_all_channels, set_pixel, save_image
 
 
-/*Print number of characters in text input and in hex conversion*/
+/*FOR DEBUGGING: Print number of characters in text input and in hex conversion*/
 void printTextDetails(std::string input, std::string hexString){
     std::cout <<"\n\nLength of input: " << getStrLength(input) << " characters\n";
     std::cout << "Hex length: " << getStrLength(hexString) << " characters\n";
 }
 
 
-/*Print hex values (strings)*/
+/*FOR DEBUGGING: Print hex values (strings)*/
 void printHexValues (std::vector<std::string> hexValues){
     std::cout << "Hex values: [ ";
     for (std::string value : hexValues){
@@ -25,7 +25,7 @@ void printHexValues (std::vector<std::string> hexValues){
 }
 
 
-/*Print RGB values (8 bit ints)*/
+/*FOR DEBUGGING: Print RGB values (8 bit ints)*/
 void printRgbValues (std::vector<std::string> hexValues){
     std::cout << "RGB values: ";
     for(std::string value : hexValues){
@@ -52,15 +52,14 @@ int main(){
     //convert each char to hex and append
     for (char c : input) hexString += getHexStr(c);
 
-    printTextDetails(input, hexString);
+    //uncomment for debugging
+    //printTextDetails(input, hexString);
 
-    //make length of full hex string a multiple of 6 if necessary + print changes
-    if (getStrLength(hexString) % 6 != 0){
+    //make length of full hex string a multiple of 6 if necessary
+    if (getStrLength(hexString) % 6 != 0)
         hexString = evenSix(hexString);
-        std::cout << "New Hex length: " << getStrLength(hexString) << "\n";
-    }
 
-    //break apart full hex string into lengths of 6 (hex color codes) and add to hexValues array
+    //break apart full hex string into lengths of 6 (hex color codes) and add each to hexValues array
     hexValues.resize( (getStrLength(hexString) / 6) );
     idx = 0;
     for (int i{0}; i < (getStrLength(hexString)); i+=6){
@@ -68,14 +67,14 @@ int main(){
         ++idx;
     }
 
-    printHexValues(hexValues);
-    printRgbValues(hexValues);
+    //uncomment for debugging
+    //printHexValues(hexValues);
+    //printRgbValues(hexValues);
 
     //set and print number of rows and columns of bitmap image
     numRows = getDimension(static_cast<int>(std::size(hexValues)));
     numCols = numRows;
-    std::cout << "Canvas: " << numRows << "x" << numCols;
-
+    std::cout << "Canvas: " << numRows << "x" << numCols << "\n";
 
     /*--------------------------image--------------------------*/
 
@@ -100,7 +99,8 @@ int main(){
     }
 
     //save image
-    image.save_image(filename);
+    image.save_image("../" + filename);
+    std::cout << "Conversion complete - see '" << filename << "'\n";
 
     return 0;
 
