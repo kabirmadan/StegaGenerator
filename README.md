@@ -10,7 +10,8 @@ This program takes text input from the user, converts it into a series of six-di
 * Conversions include space and newline characters
 * Longer text produces larger images (more characters = more pixels = bigger dimensions)
 * Excessively large inputs, such as entire books or long documents, can be processed (within reason), though it takes a few extra seconds to generate larger bitmaps
-* The output image gets saved to the cmake-build-debug directory
+* The output image gets saved to the project's root directory
+* Check out [StegaReader](https://github.com/kabirmadan/StegaReader) to extract the original text from any bitmaps you generate
 
 ----
 
